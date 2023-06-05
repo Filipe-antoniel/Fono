@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="consultas.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Clínica Rafaella Santana</title>
+    <script>
+        function mostraAlerta()
+{
+    alert("Dados enviados");
+}
+
+window.onload=function(){
+    let botaoAlerta = document.getElementById("alerta");
+
+    botaoAlerta.onclick = function () {
+        mostraAlerta() ;
+    };
+}
+    </script>
+</head>
+<body>
+    <header>
+        <div class="div1-header">
+           <img src="casa2.png" alt=""> 
+             <a href="fonoaudiologia.html">Início</a> 
+             <a href="consultas.html">Consultas</a> 
+        </div>
+
+        <div class="div2-header">
+            <div> <img src="tele.webp" alt="logo-telefone"> </div>
+            <p>(75) 99122-0996 |</p>
+            <img src="instagram.png" alt="logo-instagram">
+            <img src="facebook.png" alt="logo-facebook"> 
+            <img src="linkedin.png" alt="logo-linkedin"> 
+            <img src="whatsapp.png" alt="logo-whatsapp"> 
+            <img src="youtube.png" alt="logo-youtube"> 
+        </div>
+    </header>
+           <h1 class="agendamento">Agendamento</h1>
+    <section>
+        <article>
+            <p>Preencha os dados abaixo</p>
+            <form>
+                <div class="hr"> <hr> </div>
+                <div class="inputnome">
+                    <input type="text" placeholder="Nome Completo">
+                </div>
+                <div class="inputsexo">
+                    <label>Sexo</label>
+                    <input type="radio" name="sex" value="Male"> <label>Masculino</label>
+                    <input type="radio" name="sex" value="Female"> <label>Feminino</label>
+                </div>
+                <div class="inputfone">
+                    <input type="tel" placeholder="TEL: (xx) xxxxx-xxxx">
+                </div>
+                <div class="inputemail">
+                    <input type="email" placeholder="E-mail:">
+                </div>
+                <div class="inputdata">
+                    <input type="date">
+                </div>
+                <div class="inputturno">
+                    <label>Turno de preferência</label>
+                    <input type="radio" name="turno" value="morning"><label>Manhã</label>
+                    <input type="radio" name="turno" value="afternoon"><label>Tarde</label>
+                </div>
+                <div class="comentario">
+                    <textarea name="comentario" cols="30" rows="10" placeholder="Motivo da Consulta: "></textarea>
+                </div>
+                <div class="enviar-limpar">
+                    <input type="submit" value="Enviar" id="alerta">
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>
+        </article>
+    </section>
+</html>
